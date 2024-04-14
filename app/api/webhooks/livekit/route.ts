@@ -28,7 +28,9 @@ export async function POST(req: Request) {
         isLive: true,
       },
     });
+    return new Response("Ingress started", { status: 200 });
   }
+
   if (event.event === "ingress_ended") {
     await db.stream.update({
       where: {
@@ -38,5 +40,7 @@ export async function POST(req: Request) {
         isLive: false,
       },
     });
+    return new Response("Ingress ended", { status: 200 });
   }
+  return new Response("Unhandled event", { status: 400 });
 }
