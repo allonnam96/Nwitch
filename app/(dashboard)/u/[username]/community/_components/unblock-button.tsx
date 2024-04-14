@@ -28,7 +28,7 @@ export const UnblockButton = ({
             onClick={onClick}
             variant="link"
             size="sm"
-            className="text-blue-500 w-full"
+            className="text-purple-500 w-full"
         >
             Unblock
         </Button>

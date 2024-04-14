@@ -32,7 +32,7 @@ export const ResultCard = ({
                 </div>
                 <div className="space-y-1">
                     <div className="flex items-center gap-x-2">
-                        <p className="font-bold text-lg cursor-pointer hover:text-blue-500">
+                        <p className="font-bold text-lg cursor-pointer hover:text-purple-500">
                             {data.user.username}
                         </p>
                         <VerifiedMark />
