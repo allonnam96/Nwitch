@@ -1,36 +1,46 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Namcord
 
-## Getting Started
+[LIVE](https://nwitch.vercel.app/)
 
-First, run the development server:
+## Overview
+Nwitch is a fullstack clone of Twitch that enables platform where users can livestream and watch a wide range of content, including gaming, music, and talk shows.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Key Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Frictionless Sign-up & Sign-in
+Implemented the Clerk API for easy sign-up and sign-in, allowing users to login with their preferred method.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+![plot](./public/login.gif)
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Dashboard
+User-friendly dashboard allows users to stream content that matches their preferences seamlessly.
 
-## Learn More
+![plot](./public/dashboard.gif)
 
-To learn more about Next.js, take a look at the following resources:
+### Streaming
+With the help of the open-source software OBS, users can now watch their favorite streamers live.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+![plot](./public/screenrecord.gif)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### Blocking a viewer
+Enhanced security features include the ability to block any malicious viewers from accessing your streams.
 
-## Deploy on Vercel
+![plot](./public/blocking.gif)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Mobile Optimized
+Frontend optimized for smaller devices such as tablets and mobile.
+![plot](./public/mobile.gif)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## Technologies
++ Languages: TypeScript, HTML/CSS
++ Frameworks: React, Next.js 14
++ Runtime: Node.js
++ Databases: MySQL
++ API: Clerk.IO, UploadThing, LiveKit, Webhook, Grok
++ Library: Socket.IO, TailwindCSS, Prisma (ORM), Shadcn UI, lucide-react
+
+
+## Future Prospects
++ error handling when deleting & uploading thumbnail
++ error handling generating keys
